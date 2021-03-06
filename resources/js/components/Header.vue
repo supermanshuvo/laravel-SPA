@@ -11,7 +11,7 @@
                 <router-link class="nav-link" :to="{name:'home'}">Home</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" :to="{name:'category-list'}">Features</router-link>
+                <router-link class="nav-link" :to="{name:'category-list'}">Product Category</router-link>
             </li>
             </ul>
         </div>

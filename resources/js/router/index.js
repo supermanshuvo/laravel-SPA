@@ -16,7 +16,7 @@ const routers = new VueRouter({
             name:'home',
         },
         {
-            path:'/',
+            path:'/category',
             component: CategoryList,
             name:'category-list',
         }
