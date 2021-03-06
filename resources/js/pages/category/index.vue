@@ -3,7 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Product category Component</div>
+                    <div class="card-header">
+                        <h4>Product category Component</h4>
+                        <a href="#">Create Category</a>
+                    </div>
 
                     <div class="card-body">
                         <table class="table">
