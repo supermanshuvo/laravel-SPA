@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class CategoryController extends Controller
 {
@@ -35,7 +36,13 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'name' => 'required'
+        ]);
+        $category = Category::create([
+            'name'=>$request->name,
+            'slug'=>SlugService::createSlug(Post::class, 'slug', $request->name),
+        ]);
     }
 
     /**
