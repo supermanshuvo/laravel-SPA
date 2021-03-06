@@ -15,3 +15,6 @@ const routers = new VueRouter({
         }
     ]
 });
+
+
+export default routers;
