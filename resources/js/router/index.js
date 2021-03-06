@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 import Home from '../pages/home.vue'
 import CategoryList from '../pages/category/index.vue'
+import CreateCategory from '../pages/category/create.vue'
 
 
 const routers = new VueRouter({
@@ -19,6 +20,11 @@ const routers = new VueRouter({
             path:'/category',
             component: CategoryList,
             name:'category-list',
+        },
+        {
+            path:'/create',
+            component: CreateCategory,
+            name: 'create-category'
         }
     ]
 });
