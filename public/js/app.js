@@ -37889,78 +37889,76 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "card-header d-flex justify-content-between align-items-center"
+            },
+            [
+              _c("h4", [_vm._v("Product category Component")]),
+              _vm._v(" "),
+              _c(
+                "router-link",
+                {
+                  staticClass: "btn btn-primary",
+                  attrs: { to: { name: "create-category" } }
+                },
+                [_vm._v("Create Category")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "card-header d-flex justify-content-between align-items-center"
-              },
-              [
-                _c("h4", [_vm._v("Product category Component")]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "btn btn-primary", attrs: { href: "#" } },
-                  [_vm._v("Create Category")]
-                )
-              ]
-            ),
+    return _c("div", { staticClass: "card-body" }, [
+      _c("table", { staticClass: "table" }, [
+        _c("thead", [
+          _c("tr", [
+            _c("th", [_vm._v("ID No.")]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("table", { staticClass: "table" }, [
-                _c("thead", [
-                  _c("tr", [
-                    _c("th", [_vm._v("ID No.")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Name")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Slug")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Action")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [_vm._v("1")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Fashion")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Faction")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-primary btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_vm._v("Edit")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-warning btn-sm",
-                          attrs: { href: "#" }
-                        },
-                        [_vm._v("Delete")]
-                      )
-                    ])
-                  ])
-                ])
-              ])
+            _c("th", [_vm._v("Name")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Slug")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Action")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tbody", [
+          _c("tr", [
+            _c("td", [_vm._v("1")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Fashion")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Faction")]),
+            _vm._v(" "),
+            _c("td", [
+              _c(
+                "a",
+                { staticClass: "btn btn-primary btn-sm", attrs: { href: "#" } },
+                [_vm._v("Edit")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "btn btn-warning btn-sm", attrs: { href: "#" } },
+                [_vm._v("Delete")]
+              )
             ])
           ])
         ])
