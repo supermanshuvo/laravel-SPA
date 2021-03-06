@@ -3,9 +3,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-between align-items-center">
                         <h4>Product category Component</h4>
-                        <a href="#">Create Category</a>
+                        <a href="#" class="btn btn-primary">Create Category</a>
                     </div>
 
                     <div class="card-body">
