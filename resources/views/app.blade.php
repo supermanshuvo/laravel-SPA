@@ -14,6 +14,7 @@
         </head>
     <body>
     <div id="app">
+        <app-header class="mb-3"></app-header>
         <router-view></router-view>
     </div>
         <script src="{{ asset('js/app.js') }}"></script>

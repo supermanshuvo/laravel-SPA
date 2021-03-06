@@ -4,7 +4,7 @@ import routers from './router/index'
 require('./bootstrap');
 
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('app-header', require('./components/Header.vue').default);
 
 const app = new Vue({
     el: '#app',
