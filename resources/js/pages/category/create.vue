@@ -37,7 +37,7 @@ export default {
     },
     methods:{
         CreateCategory(){
-            axios.post('api/category',{name:this.categoryName}).then(Response=>{
+            axios.post('/api/category',{name:this.categoryName}).then(Response=>{
                 console.log(Response);
             })
         }

@@ -1919,7 +1919,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     CreateCategory: function CreateCategory() {
-      console.log('Form Submit');
+      axios.post('/api/category', {
+        name: this.categoryName
+      }).then(function (Response) {
+        console.log(Response);
+      });
     }
   }
 });
