@@ -13,7 +13,7 @@
                                 <form action="">
                                     <div class="form-group">
                                         <label for="">Category Name</label>
-                                        <input type="text" name="name" class="form-control" placeholder="Category Name">
+                                        <input type="text" v-model="categoryName" name="name" class="form-control" placeholder="Category Name">
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-success">Create Category</button>
@@ -30,7 +30,16 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            categoryName:'',
+        }
+    },
+    methods:{
+        CreateCategory(){
+            console.log('Form Submit');
+        }
+    }
 }
 </script>
 
