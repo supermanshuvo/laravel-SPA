@@ -44,6 +44,7 @@ class CategoryController extends Controller
             'name'=>$request->name,
             'slug'=>SlugService::createSlug(Post::class, 'slug', $request->name),
         ]);
+        return response()->json('success',200);
     }
 
     /**
