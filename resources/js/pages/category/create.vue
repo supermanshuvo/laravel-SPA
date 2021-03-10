@@ -10,7 +10,7 @@
                   <div class="card-body">
                       <div class="row">
                           <div class="col-6 offset-3">
-                                <form action="">
+                                <form @submit.prevent="createCategory">
                                     <div class="form-group">
                                         <label for="">Category Name</label>
                                         <input type="text" v-model="categoryName" name="name" class="form-control" placeholder="Category Name">
@@ -37,7 +37,9 @@ export default {
     },
     methods:{
         CreateCategory(){
-            console.log('Form Submit');
+            axios.post('api/category',{name:this.categoryName}).then(Response=>{
+                console.log(Response);
+            })
         }
     }
 }
