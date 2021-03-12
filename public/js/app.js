@@ -1918,11 +1918,11 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    CreateCategory: function CreateCategory() {
+    createCategory: function createCategory() {
       axios.post('/api/category', {
         name: this.categoryName
-      }).then(function (Response) {
-        console.log(Response);
+      }).then(function (response) {
+        console.log(response);
       });
     }
   }
